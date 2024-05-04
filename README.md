@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project challenges developer to build a classic Flappy Bird game using modern web development technologies. Here's the breakdown:
 
-## Getting Started
+### Learning Objectives:
+- Understand the core concepts of React component structure and state management.
+- Utilize TypeScript for type safety and improved code maintainability.
+- Integrate HTML and CSS for rendering game elements and styling.
+- Implement game mechanics like gravity, jumping, collision detection, and scoring.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Project Requirements:
+- **Development Environment:** Setup a development environment with Node.js, npm (or yarn), and a code editor like Visual Studio Code.
+- **Project Structure:** Organize the project with separate folders for components, styles, assets (images/sounds), and a main App.tsx file.
+- **Game Components:** Create React components for the bird, ground, pipes, and a background.
+- **State Management:** Use React state to manage the game state (playing, game over), bird position, score, and pipe generation.
+- **User Input:** Implement event listeners to handle user input (e.g., spacebar press) for making the bird jump.
+    Game Loop: Utilize the useEffect hook or a library like react-loop to create a game loop for continuous animation and updates.
+- **Game Mechanics:**
+        1. Implement gravity that pulls the bird downwards.
+        2. Handle bird jumps with a limited upward movement.
+        3. Generate random pipes (top and bottom) at regular intervals with varying gaps.
+        4. Move pipes horizontally across the screen at a constant speed.
+        5. Detect collisions between the bird and the ground, pipes, or the top of the screen.
+        6. Update the score based on successfully passing between pipes.
+- **Styling:** Use CSS to style the game elements like background, bird, pipes, ground, and score display.
+- **Optional Enhancements:**
+        1. Implement a game over screen with score display and a restart button.
+        2. Add sound effects for jumping and collisions.
+        3. Improve visuals with animations for the bird and background.
